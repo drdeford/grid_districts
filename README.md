@@ -83,7 +83,6 @@ Source code for the two interactive grid partitioning tools, hosted on my <a hre
    </table>
   </ul>
   
-![alt text](https://github.com/drdeford/grid_districts/blob/master/Figures/interface_ex.png "Interface Example")
 
   
    <h2>  Interface Instructions: </h2>
@@ -102,10 +101,11 @@ changes the distribution of voters across the grid and hence which party wins or
 and paste it into the "Your Matrix" box. </li>
 </ul>
 
+![alt text](https://github.com/drdeford/grid_districts/blob/master/Figures/interface_ex.png "Interface Example")
 
 
 
-<h2> Statistics:</h2>
+<h2> Statistics Details:</h2>
 The tables below the graph report statistics for the whole plan and individual districts:
 <ul>
 <li> Global Measures</li>
