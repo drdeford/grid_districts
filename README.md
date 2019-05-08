@@ -15,8 +15,71 @@ Source code for the two interactive grid partitioning tools, hosted on my <a hre
 ![alt text](https://github.com/drdeford/grid_districts/blob/master/Figures/adv2.png "Populations")
     
 ![alt text](https://github.com/drdeford/grid_districts/blob/master/Figures/adv3.png "Vote Totals")
+<table border="1" cellpadding="5" cellspacing="5">
+  <tr><td> Total Population </td><td>	250 </td></tr>
+ <tr><td>Ideal District Size  </td><td>		50.0</td></tr>
+ <tr><td>Number of cut edges  </td><td>		18</td></tr>
+ <tr><td>Proportion of cut edges  </td><td>		0.45</td></tr>
+ <tr><td>Maximum Population Deviation  </td><td>		22.0</td></tr>
+ <tr><td>Maximum Population Deviation %  </td><td>		44.0</td></tr>
+ <tr><td>Mean-Median  </td><td>		−0.0473</td></tr>
+ <tr><td>Efficiency Gap  </td><td>		−0.188</td></tr>
+</table>
+  <table border="1" cellpadding="5" cellspacing="5">
+ 
+<tr><td>Whole Plan 	Votes 	Votes % 	Seats 	Seats %</td></tr>
+ <tr><td>Party 1  </td><td>		136 </td><td>	
+	54.4 </td><td>	
+	2 </td><td>	
+	40.0</td></tr>
+ <tr><td>Party 2  </td><td>		114 </td><td>	
+	45.6 </td><td>	
+	3 </td><td>	
+	60.0</td></tr>
+</table>
+  <table border="1" cellpadding="5" cellspacing="5">
 
-  
+ <tr><td>District # 	0 </td><td>	
+	1 </td><td>	
+	2 </td><td>	
+	3 </td><td>	
+	4</td></tr>
+ <tr><td>District Populations  </td><td>		72 </td><td>	
+	51 </td><td>	
+	62 </td><td>	
+	28 </td><td>	
+	37</td></tr>
+ <tr><td>Deviation from Ideal  </td><td>		22.0 </td><td>	
+	1.0 </td><td>	
+	12.0 </td><td>	
+	−22.0 </td><td>	
+	−13.0</td></tr>
+ <tr><td>Deviation from Ideal %  </td><td>		44.0 </td><td>	
+	2.0 </td><td>	
+	24.0 </td><td>	
+	−44.0 </td><td>	
+	−26.0</td></tr>
+ <tr><td>Party 1 Votes  </td><td>		42 </td><td>	
+	34 </td><td>	
+	29 </td><td>	
+	13 </td><td>	
+	18</td></tr>
+ <tr><td>Party 1 Votes %  </td><td>		58.3 </td><td>	
+	66.7 </td><td>	
+	46.8 </td><td>	
+	46.4 </td><td>	
+	48.6</td></tr>
+ <tr><td>Party 2 Votes  </td><td>		30 </td><td>	
+	17 </td><td>	
+	33 </td><td>	
+	15 </td><td>	
+	19</td></tr>
+ <tr><td>Party 2 Votes %  </td><td>		41.7 </td><td>	
+	33.3 </td><td>	
+	53.2 </td><td>	
+	53.6 </td><td>	
+	51.4</td></tr>
+   </table>
   </ul>
   
   
