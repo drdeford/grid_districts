@@ -20,8 +20,11 @@ def grid_parameters(m=input_box(default = 5, label='Number of rows: '),n=input_b
     def grid_colors( dcolors=input_box(default=[choice(list(colors)) for x in range(c)],label="Colors:"),
     mat=('Assignments: ', tempmat),
     pop=('Populations: ', matrix([[1 for x in range(m)] for x in range(n)])),
-    votes1 = ('Party 1 Vote Percentage: ', matrix([[randrange(2) for x in range(m)] for x in range(n)])),
-    hc=checkbox(default=False,label='Highlight Cuts?'),pm=checkbox(default=False,label='Export matrix?')):#,auto_update=False):
+    votes1 = ('Party 1 Vote Percentage: ', matrix(QQ,[[randrange(2) for x in range(m)] for x in range(n)])),
+    hc=checkbox(default=False,label='Highlight Cuts?'),
+    pm=checkbox(default=True,label='Export matrix?'),
+    epop=checkbox(default=True,label='Export Populations?'),
+    evotes=checkbox(default=True,label='Export Votes?')):#,auto_update=False):
         #print(mat)
         #print(mat[0,0])
         g = graphs.Grid2dGraph(m,n)
@@ -152,4 +155,14 @@ def grid_parameters(m=input_box(default = 5, label='Number of rows: '),n=input_b
             outl = []
             for x in range(mat.ncols()):
                 outl.append(mat[x])
+            pretty_print("Current Plan:", " ",outl)
+        if epop == True:
+            outl = []
+            for x in range(pop.ncols()):
+                outl.append(mat[x])
+            pretty_print("Current Populations:", " ",outl)
+        if evotes == True:
+            outl = []
+            for x in range(votes1.ncols()):
+                outl.append(votes1[x])
             pretty_print("Current Plan:", " ",outl)
