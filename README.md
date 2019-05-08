@@ -3,9 +3,9 @@
 Source code for the two interactive grid partitioning tools, hosted on my <a href="https//people.csail.mit.edu/ddeford">academic webpage</a>. The purpose of these widgets is to provide an easy interface for constructing examples on small grids for combinatorial questions and as a teaching tool for introducing people to some of the underlying mathematics of <a href="https//people.csail.mit.edu/ddeford/CAPR.php">computational redistricting</a>. The two versions offer different amount of customization and different metrics that are evaluated on the plans: 
 <ul>
   <li>  <a href="https//people.csail.mit.edu/ddeford/grid_cuts.html">Basic Version</a> The basic version focuses on building partitions by coloring the nodes in a grid graph and measuring how many edges are cut in the resulting partition. Cut edges are edges of the graph whose endpoints belon to different districts. Usually, partitions with a smaller number of cut edges are more visually appealing. The figures below show a partition of the 5x5 grid into 5 equally sized pieces with the cut edges highlighted and then removed. </li>
-  ![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Partition of a 5x5 grid")
-    ![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Highlighting the cut edges")
-  ![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "After cutting the edges")
+  ![alt text](https://github.com/drdeford/grid_districts/blob/master/Figures/basic1.png "Partition of a 5x5 grid")
+    ![alt text](https://github.com/drdeford/grid_districts/blob/master/Figures/basic2.png "Highlighting the cut edges")
+  ![alt text](https://github.com/drdeford/grid_districts/blob/master/Figures/basic3.png "After cutting the edges")
 
   <li> <a href="https//people.csail.mit.edu/ddeford/grid_cuts_advanced.html">Advanced Version</a> The advanced version adds population and partisan data to the nodes which allows for more complex demonstrations. This version also reports some simple measures of partisan imbalance that are used to evaluate real-world districting plans. </li>
   
