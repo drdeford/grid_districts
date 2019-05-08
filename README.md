@@ -10,7 +10,7 @@ Source code for the two interactive grid partitioning tools, hosted on my <a hre
     
 ![alt text](https://github.com/drdeford/grid_districts/blob/master/Figures/basic3.png "After cutting the edges")
 
-  <li> <a href="https//people.csail.mit.edu/ddeford/grid_cuts_advanced.html">Advanced Version</a> The advanced version adds population and partisan data to the nodes which allows for more complex demonstrations. This version also reports some simple measures of partisan imbalance that are used to evaluate real-world districting plans. The figures below show that same districting plan as above but with populations and vote totals overlayed on the nodes of the grid and the table shows the basic statistcs for this combination of population, electoral, and districting data.  </li>
+  <li> <a href="https//people.csail.mit.edu/ddeford/grid_cuts_advanced.html">Advanced Version</a> The advanced version adds population and partisan data to the nodes which allows for more complex demonstrations. This version also reports some simple measures of partisan imbalance that are used to evaluate real-world districting plans. The figures below show that same districting plan as above but with populations and vote totals overlayed on the nodes of the grid and the table shows the basic statistcs for this combination of population, electoral, and districting data. <b>Can you identify packing, cracking, and malaportionment in this example?</b> </li>
   
 ![alt text](https://github.com/drdeford/grid_districts/blob/master/Figures/adv2.png "Populations")
     
