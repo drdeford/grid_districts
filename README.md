@@ -10,11 +10,12 @@ Source code for the two interactive grid partitioning tools, hosted on my <a hre
     
 ![alt text](https://github.com/drdeford/grid_districts/blob/master/Figures/basic3.png "After cutting the edges")
 
-  <li> <a href="https//people.csail.mit.edu/ddeford/grid_cuts_advanced.html">Advanced Version</a> The advanced version adds population and partisan data to the nodes which allows for more complex demonstrations. This version also reports some simple measures of partisan imbalance that are used to evaluate real-world districting plans. The figures below show that same districting plan as above but with populations and vote totals overlayed on the nodes of the grid. </li>
+  <li> <a href="https//people.csail.mit.edu/ddeford/grid_cuts_advanced.html">Advanced Version</a> The advanced version adds population and partisan data to the nodes which allows for more complex demonstrations. This version also reports some simple measures of partisan imbalance that are used to evaluate real-world districting plans. The figures below show that same districting plan as above but with populations and vote totals overlayed on the nodes of the grid and the table shows the basic statistcs for this combination of population, electoral, and districting data.  </li>
   
 ![alt text](https://github.com/drdeford/grid_districts/blob/master/Figures/adv2.png "Populations")
     
 ![alt text](https://github.com/drdeford/grid_districts/blob/master/Figures/adv3.png "Vote Totals")
+
 <table border="1" cellpadding="5" cellspacing="5">
   <tr><td> Total Population </td><td>	250 </td></tr>
  <tr><td>Ideal District Size  </td><td>		50.0</td></tr>
@@ -39,7 +40,7 @@ Source code for the two interactive grid partitioning tools, hosted on my <a hre
 </table>
   <table border="1" cellpadding="5" cellspacing="5">
 
- <tr><td>District NUmber  </td><td>	 	0 </td><td>	
+ <tr><td>District Number  </td><td>	 	0 </td><td>	
 	1 </td><td>	
 	2 </td><td>	
 	3 </td><td>	
@@ -82,9 +83,10 @@ Source code for the two interactive grid partitioning tools, hosted on my <a hre
    </table>
   </ul>
   
+![alt text](https://github.com/drdeford/grid_districts/blob/master/Figures/interface_ex.png "Interface Example")
+
   
-  
-   <h2>  Instructions: </h2>
+   <h2>  Interface Instructions: </h2>
 <ul>
 <li> <b>Grid Setup: </b> The first set of inputs controls the dimensions of the grid and the number of colors to use. </li>
 <li> <b>Initial Coloring: </b>The next set controls the choice of initial coloring. Random, stripes, and empty are reasonably self-explanatory. If you select "Input Your Own" the coloring will start with
@@ -99,6 +101,8 @@ changes the distribution of voters across the grid and hence which party wins or
 <li><b>Exporting Colorings: </b> If you make a coloring you particularly like, you can press the final checkbox to write the labels to the screen. This will allow you to copy this coloring 
 and paste it into the "Your Matrix" box. </li>
 </ul>
+
+
 
 
 <h2> Statistics:</h2>
@@ -123,9 +127,10 @@ The tables below the graph report statistics for the whole plan and individual d
 <li> <b>Votes</b> is the total number of votes for each party in that district.</li>
 </ul>
 </ul>
-<h2> Activity:</h2> 
+<h2> Activity Examples:</h2> 
 
 <ul>
+<li>Given a fixed grid and number of colors can you find the coloring with the minimum number of cut edges? </a>
 <li> Using the 5x5 grid with all nodes having population 1 can you construct a set of districts along with some assignment of the votes so that party 1 gets 40% of the votes but no seats?</li>
 <li> Can you find a plan with a 50-50 vote share and a mean-median score less than 1% but with a difference of 2 seats between the parties?</li>
 <li> Can you find a plan with a small efficiency gap and a large mean-median score? How about the other way around?</li>
