@@ -27,7 +27,7 @@ Source code for the two interactive grid partitioning tools, hosted on my <a hre
 </table>
   <table border="1" cellpadding="5" cellspacing="5">
  
-<tr><td>Whole Plan 	Votes 	Votes % 	Seats 	Seats %</td></tr>
+<tr><td>Whole Plan  </td><td>		Votes  </td><td>		Votes %  </td><td>		Seats  </td><td>		Seats %</td></tr>
  <tr><td>Party 1  </td><td>		136 </td><td>	
 	54.4 </td><td>	
 	2 </td><td>	
@@ -39,7 +39,7 @@ Source code for the two interactive grid partitioning tools, hosted on my <a hre
 </table>
   <table border="1" cellpadding="5" cellspacing="5">
 
- <tr><td>District # 	0 </td><td>	
+ <tr><td>District NUmber  </td><td>	 	0 </td><td>	
 	1 </td><td>	
 	2 </td><td>	
 	3 </td><td>	
