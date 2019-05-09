@@ -1,6 +1,13 @@
 @interact
 def grid_parameters(m=input_box(default = 5, label='Number of rows: '),n=input_box(default = 5, label='Number of columns: '),
- c=input_box(default = 5, label='Number of colors: '),ic=selector(["Random", "Stripes", "Empty", "Input your own"],default = "Random",label="Initial Coloring: ", buttons=True),your_start=input_box(default=[[0,0,0,1,1],[0,0,2,1,1],[2,2,2,1,3],[2,4,3,3,3],[4,4,4,4,3]],label="Your Matrix" ), es=input_box(default=8,label="Edge width: "),ns=input_box(default=1000,label="Node size: "),auto_update=False):
+ c=input_box(default = 5, label='Number of colors: '),ic=selector(["Random", "Stripes", "Empty", "Input your own"],default = "Random",label="Initial Coloring: ", buttons=True),
+your_start=input_box(default=[[0,0,0,1,1],[0,0,2,1,1],[2,2,2,1,3],[2,4,3,3,3],[4,4,4,4,3]],label="Your Assignment Matrix" ),
+ipop=selector(["Random", "Equal",  "Input your own"],default = "Random",label="Initial Population: ", buttons=True),
+your_start_p=input_box(default=[[1 for x in range(5)] for y in range(5)],label="Your Population Matrix" ),
+ivotes=selector(["Random", "Stripes",  "Input your own"],default = "Random",label="Initial Votes: ", buttons=True),
+your_start_v=input_box(default=[[randrange(2) for x in range(5)] for y in range(5)]
+,label="Your Vote Matrix" ),
+ es=input_box(default=8,label="Edge width: "),ns=input_box(default=1000,label="Node size: "),auto_update=False):
 
 
     if ic == "Random":
@@ -13,14 +20,30 @@ def grid_parameters(m=input_box(default = 5, label='Number of rows: '),n=input_b
 
     else:
         tempmat = matrix(your_start)
+ 
+    if ipop == "Random":
+        temppop = matrix(ZZ,[[randrange(1,10) for x in range(m)] for y in range(n)])
 
-    #v1 = 
+    elif ipop == "All Ones":
+        temppop = matrix(ZZ,[[1 for x in range(m)] for y in range(n)])
+
+    elif ipop == "Input your own":
+        temppop = matrix(your_start_p)
+
+    if ivotes == "Random":
+        tempvotes = matrix(QQ,[[randrange(2) for x in range(m)] for y in range(n)])
+
+    elif ivotes == "Stripes":
+        tempvotes = matrix(QQ,[[(x%2)*int(x*c/m) for x in range(m)] for y in range(n)])
+
+    elif ivotes == "Input your own":
+        tempvotes = matrix(QQ,your_start_v)
 
     @interact(layout=[['dcolors'],['pop'],['votes1'],['mat']])
     def grid_colors( dcolors=input_box(default=[choice(list(colors)) for x in range(c)],label="Colors:"),
     mat=('Assignments: ', tempmat),
-    pop=('Populations: ', matrix([[1 for x in range(m)] for x in range(n)])),
-    votes1 = ('Party 1 Vote Percentage: ', matrix(QQ,[[randrange(2) for x in range(m)] for x in range(n)])),
+    pop=('Populations: ', temppop),
+    votes1 = ('Party 1 Vote Percentage: ', tempvotes),
     hc=checkbox(default=False,label='Highlight Cuts?'),
     pm=checkbox(default=True,label='Export matrix?'),
     epop=checkbox(default=True,label='Export Populations?'),
@@ -166,3 +189,4 @@ def grid_parameters(m=input_box(default = 5, label='Number of rows: '),n=input_b
             for x in range(votes1.ncols()):
                 outl.append(votes1[x])
             pretty_print("Current Plan:", " ",outl)
+
