@@ -34,7 +34,7 @@ your_start_v=input_box(default=[[randrange(2) for x in range(5)] for y in range(
         tempvotes = matrix(QQ,[[randrange(2) for x in range(m)] for y in range(n)])
 
     elif ivotes == "Stripes":
-        tempvotes = matrix(QQ,[[(x%2)*int(x*c/m) for x in range(m)] for y in range(n)])
+        tempvotes = matrix(QQ,[[(x%2) for x in range(m)] for y in range(n)])
 
     elif ivotes == "Input your own":
         tempvotes = matrix(QQ,your_start_v)
