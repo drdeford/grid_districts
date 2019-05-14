@@ -189,4 +189,3 @@ your_start_v=input_box(default=[[randrange(2) for x in range(5)] for y in range(
             for x in range(votes1.ncols()):
                 outl.append(votes1[x])
             pretty_print("Current Plan:", " ",outl)
-
