@@ -53,7 +53,7 @@ def grid_parameters(m=input_box(default = 5, label='Number of rows: '),n=input_b
             g.show(vertex_colors=vcolors,vertex_labels=False,vertex_size=ns,edge_thickness=es, vertex_shape='s')
               
         pretty_print("Number of cut edges: ", " ",cut)
-        pretty_print("Proportion of cut edges: ", " ",cut/len(g.edges())," = ", (cut/len(g.edges())).n())
+        pretty_print("Proportion of cut edges: ", " ",float(cut)/len(g.edges())," = ", (float(cut)/len(g.edges())))
 
         pretty_print("Partition sizes"," ",[len(vcolors[dcolors[x]]) for x in range(c)])
 
